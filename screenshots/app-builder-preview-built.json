@@ -1,0 +1,41 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "1CR HACK APK",
+      "hasCanvas": false,
+      "bodyTextLen": 299,
+      "bodyTextHash": "75c1bce00bdb550b406bd99332516300cd2fd2f55d3552844f44bd6bb4918e0f",
+      "bodyTextPrefix": "1CR HACK APK SECURE SYSTEM ACCESS CONNECTING LOCAL TIME 17:36:24",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "1CR HACK APK",
+      "hasCanvas": false,
+      "bodyTextLen": 299,
+      "bodyTextHash": "0088d68dda0300971b6c13887e7c4c76c367734d83dffb9d36e55f032785cd18",
+      "bodyTextPrefix": "1CR HACK APK SECURE SYSTEM ACCESS CONNECTING LOCAL TIME 17:36:25",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: body text replaced (similar length, page start changed)",
+    "mobile: body text replaced (similar length, page start changed)"
+  ]
+}
