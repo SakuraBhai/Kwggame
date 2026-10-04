@@ -42,7 +42,7 @@ export function RedOrb({ onOpen }: { onOpen: () => void }) {
           : { right: 18, bottom: 22 }),
         animation: "orb-glow 1.6s ease-in-out infinite",
         background:
-          "radial-gradient(circle at 35% 30%, #ff7a90 0%, var(--color-danger) 42%, #7f1028 100%)",
+          "radial-gradient(circle at 35% 30%, #ff7a90 0%, #e11d48 42%, #7f1028 100%)",
       }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
