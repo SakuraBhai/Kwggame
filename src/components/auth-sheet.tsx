@@ -42,7 +42,7 @@ export function AuthSheet({ onHide }: { onHide: () => void }) {
 
   return (
     <div
-      className="fixed z-50 w-[min(22rem,calc(100vw-1.5rem))] overflow-hidden rounded-2xl border border-danger/70 bg-bg shadow-[0_20px_60px_rgb(0_0_0/0.65)]"
+      className="fixed z-[90] w-[min(22rem,calc(100vw-1.5rem))] overflow-hidden rounded-2xl border border-danger/70 bg-bg shadow-[0_20px_60px_rgb(0_0_0/0.65)]"
       style={{ left: pos.x, top: pos.y }}
     >
       <div
@@ -66,7 +66,7 @@ export function AuthSheet({ onHide }: { onHide: () => void }) {
           <Crosshair className="size-4 text-danger" />
           <div>
             <p className="text-xs font-bold tracking-[0.18em] text-fg">KWG PANNEL</p>
-            <p className="text-[9px] tracking-[0.16em] text-danger">LIVE GATE</p>
+            <p className="text-[9px] tracking-[0.16em] text-danger">KWG PANNEL</p>
           </div>
         </div>
         <span className="text-[9px] tracking-[0.2em] text-muted">LAB MODE</span>
@@ -82,7 +82,7 @@ export function AuthSheet({ onHide }: { onHide: () => void }) {
                 REQUIRED
               </p>
               <p className="mt-2 text-[10px] tracking-[0.2em] text-muted">
-                INITIATE LOGIN TO OPEN KWG
+                KWG PANNEL
               </p>
             </div>
             <div className="grid grid-cols-2 gap-2">

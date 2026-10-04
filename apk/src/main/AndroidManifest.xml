@@ -3,7 +3,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:usesCleartextTraffic="false"
-        android:label="KWG">
+        android:label="KWG PANNEL">
         <activity
             android:name=".MainActivity"
             android:exported="true"

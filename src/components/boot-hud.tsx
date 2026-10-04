@@ -87,7 +87,7 @@ export function BootHud() {
               KWG PANNEL
             </h1>
             <p className="mt-1.5 text-[10px] tracking-[0.28em] text-muted">
-              SECURE SYSTEM ACCESS
+              KWG PANNEL
             </p>
           </div>
           <div className="flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-[10px] tracking-[0.18em] text-muted">
