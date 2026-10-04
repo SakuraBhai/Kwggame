@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Check } from "lucide-react";
 
-const DURATION_MS = 4800;
+const DURATION_MS = 3500;
 
 const CHECKS = [
   { label: "Identity Verification", at: 0.14 },
@@ -31,7 +31,7 @@ function Panel({
   );
 }
 
-export function BootHud({ onComplete }: { onComplete: () => void }) {
+export function BootHud() {
   const [now, setNow] = useState<Date | null>(null);
   const [progress, setProgress] = useState(0);
 
@@ -43,8 +43,6 @@ export function BootHud({ onComplete }: { onComplete: () => void }) {
       setProgress(p);
       if (p < 1) {
         frame = requestAnimationFrame(tick);
-      } else {
-        onComplete();
       }
     };
     frame = requestAnimationFrame(tick);
@@ -54,9 +52,9 @@ export function BootHud({ onComplete }: { onComplete: () => void }) {
       cancelAnimationFrame(frame);
       window.clearInterval(clock);
     };
-  }, [onComplete]);
+  }, []);
 
-  const pct = Math.min(99, Math.round(progress * 100));
+  const pct = Math.min(100, Math.round(progress * 100));
   const lock = Math.min(4, 1 + Math.floor(progress * 4));
   const signal = (98.4 + progress * 0.5).toFixed(1);
   const temp = (42.4 + progress * 0.5).toFixed(1);

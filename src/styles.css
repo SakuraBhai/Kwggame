@@ -9,6 +9,8 @@
   --color-border: #14321a;
   --color-panel: #07160e;
   --color-limebar: #c6ef1a;
+  --color-danger: #e11d48;
+  --color-danger-fg: #ffe4ea;
   --radius: 0.75rem;
   --font-sans: "Share Tech Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
 }
@@ -67,10 +69,21 @@
   }
 }
 
+@keyframes orb-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(225 29 72 / 0.55), 0 0 28px rgb(225 29 72 / 0.9);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgb(225 29 72 / 0), 0 0 36px rgb(225 29 72 / 1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .radar-sweep,
   .pulse-dot,
-  .bar-live {
+  .bar-live,
+  .orb-glow {
     animation: none !important;
   }
 }
